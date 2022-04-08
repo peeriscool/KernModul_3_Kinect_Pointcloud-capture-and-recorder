@@ -1,0 +1,12 @@
+<!DOCTYPE MeshLabDocument>
+<MeshLabProject>
+ <MeshGroup>
+  <MLMesh visible="1" idInFile="-1" filename="frame022.dae" label="frame022.obj">
+   <MLMatrix44>
+1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 
+</MLMatrix44>
+   <RenderingOption wireWidth="1" pointSize="3" boxColor="234 234 234 255" pointColor="252 233 79 255" wireColor="64 64 64 255" solidColor="192 192 192 255">110111000000000000000110000001011100000010100000010100111011110000001001</RenderingOption>
+  </MLMesh>
+ </MeshGroup>
+ <RasterGroup/>
+</MeshLabProject>
