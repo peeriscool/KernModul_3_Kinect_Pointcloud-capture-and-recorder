@@ -88,8 +88,10 @@ public void setup() {
 }
 
 public void draw() {
-  background(kinect.getColorImage());
+  
 
+  background(kinect.getColorImage());
+  
  // image(kinect.getColorImage(), 0, 0, 1920/2,1080/2);
 
 // the values 0 and 400 are used for the
@@ -172,87 +174,89 @@ rect(0,0, 1920, 1080);
   endPGL();
 
   popMatrix();
-
+if (Button("Save", 10, 100)) {saveFrame();}
+//  public float Slider(String label, float min, float max, float value, int x, int y, int w, int h) 
+ r =Slider("alpha ",0,255,a,5,10,500,50);
   stroke(255, 0, 0);
   text(frameRate, 50, height- 50);
 }
 
-public void mousePressed() {
+//public void mousePressed() {
 
-  println(frameRate);
-    saveFrame();
-}
+//  println(frameRate);
+//    saveFrame();
+//}
 
-public void keyPressed() {
+//public void keyPressed() {
 
   
 
-  if (key == 'q') {
-    a += 0.01;
-    println("angle "+a);
-  }
-  if (key == 'w') {
-    a -= 0.01;
-    println("angle "+a);
-  }
-   if (key == 'e') {
-    r += 10;
-    println("angle "+r);
-  }
-  if (key == 'r') {
-    r -= 10;
-    println("angle "+r);
-  }
+//  if (key == 'q') {
+//    a += 0.01;
+//    println("angle "+a);
+//  }
+//  if (key == 'w') {
+//    a -= 0.01;
+//    println("angle "+a);
+//  }
+//   if (key == 'e') {
+//    r += 10;
+//    println("angle "+r);
+//  }
+//  if (key == 'r') {
+//    r -= 10;
+//    println("angle "+r);
+//  }
   
-  if (key == 'a') {
-    zval +=10;
-    println(zval);
-  }
-  if (key == 's') {
-    zval -= 10;
-    println(zval);
-  }
+//  if (key == 'a') {
+//    zval +=10;
+//    println(zval);
+//  }
+//  if (key == 's') {
+//    zval -= 10;
+//    println(zval);
+//  }
 
-  if (key == 'd') {
-    depthVal -= 20;
-    println(depthVal);
-  }
+//  if (key == 'd') {
+//    depthVal -= 20;
+//    println(depthVal);
+//  }
 
-  if (key == 'f') {
-    depthVal += 20;
-    println(depthVal);
-  }
-  if (key == 'z') {
-    scaleVal += 20;
-    println(scaleVal);
-  }
-  if (key == 'x') {
-    scaleVal -= 20;
-    println(scaleVal);
-  }
-  //peer
- if(key == 'c')
- {
-   offsetY += 10;
-    println(offsetY);
- }
-  if(key == 'v')
- {
-   offsetY -= 10;
-     println(offsetY);
- }
-  if(key == 'b')
- {
-   offsetX += 5;
-     println(offsetX);
- }
-  if(key == 'n')
- {
-   offsetX -= 5;
-     println(offsetX);
- }
+//  if (key == 'f') {
+//    depthVal += 20;
+//    println(depthVal);
+//  }
+//  if (key == 'z') {
+//    scaleVal += 20;
+//    println(scaleVal);
+//  }
+//  if (key == 'x') {
+//    scaleVal -= 20;
+//    println(scaleVal);
+//  }
+//  //peer
+// if(key == 'c')
+// {
+//   offsetY += 10;
+//    println(offsetY);
+// }
+//  if(key == 'v')
+// {
+//   offsetY -= 10;
+//     println(offsetY);
+// }
+//  if(key == 'b')
+// {
+//   offsetX += 5;
+//     println(offsetX);
+// }
+//  if(key == 'n')
+// {
+//   offsetX -= 5;
+//     println(offsetX);
+// }
  
-}
+//}
 
   /*
   //start recording 30 frames with 'r'
